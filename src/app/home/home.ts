@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Scene } from './scene/scene';
 import { Steps } from './steps';
 
@@ -7,7 +7,9 @@ import { Steps } from './steps';
   imports: [Scene],
   templateUrl: './home.html',
   styleUrl: './home.scss',
+  providers: [Steps],
 })
 export class Home {
-  
+  stepsServ = inject(Steps);
+  steps = this.stepsServ.list;
 }

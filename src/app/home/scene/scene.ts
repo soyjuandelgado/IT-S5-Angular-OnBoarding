@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { IStep } from '../istep';
 
 @Component({
@@ -8,11 +8,12 @@ import { IStep } from '../istep';
   styleUrl: './scene.scss',
 })
 export class Scene {
-  @Input() step: IStep   = {
+  step = input<IStep>({
     title: 'Dedica moltes hores',
     description: `Un mínim de 30 hores a la setmana. Si no en tens prou, hauràs de dedicar-li més hores. Al principi sembla impossible,
 però notaràs una millora ràpidament.`,
     img: '',
     bgcolor: '',
-  };
+  });
+
 }
