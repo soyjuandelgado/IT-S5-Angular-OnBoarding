@@ -2,9 +2,14 @@ import { Injectable } from '@angular/core';
 import { IStep } from './istep';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class Steps {
+  steps: IStep[] = [];
+  current = 0;
+  constructor() {}
 
-  constructor() { }
+  getCurrent() {
+    return this.current;
+  }
 }

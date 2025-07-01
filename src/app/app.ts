@@ -9,5 +9,5 @@ import { Home } from './home/home';
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'IT-S5-Angular-OnBoarding';
+  protected title = 'On Boarding';
 }
