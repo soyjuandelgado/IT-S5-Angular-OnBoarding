@@ -72,6 +72,7 @@ For more information on using the Angular CLI, including detailed command refere
   - [🗂️Tabla de contenidos](#️tabla-de-contenidos)
   - [📄Descripción](#descripción)
     - [1. Mostrar texto del primer paso](#1-mostrar-texto-del-primer-paso)
+    - [2. Añadir nuevos textos y mostrarlos en diferentes scenes](#2-añadir-nuevos-textos-y-mostrarlos-en-diferentes-scenes)
   - [💻Tecnologías Utilizadas](#tecnologías-utilizadas)
   - [📋Requisitos](#requisitos)
   - [🛠️Instalación](#️instalación)
@@ -93,6 +94,18 @@ Se dibujan tarjetas con la información de cada paso y se puede ir hacia delante
 - Mostrar texto en la primera escena.
 
 <img src="public/ex1.png" width="500">
+
+### 2. Añadir nuevos textos y mostrarlos en diferentes scenes
+
+- Crear atributo `step` en `Scene`. Debe ser de tipo `iStep`.
+- Añadirle `input()` para poder modificarlo externamente desde `Home`.
+- Modificar impresión por pantalla de `Scene`.
+- Añadir array de `iStep` en `Steps` con los datos proporcionados.
+- Inyectar `Steps` en `Home` con `inject()`
+- Pasar valor se step de `Home` a Scene.
+- Recorrer e imprimir el listado de steps en `Home` mediante Scene.
+
+<img src="public/ex2.png" width="500">
 
 ## 💻Tecnologías Utilizadas
 

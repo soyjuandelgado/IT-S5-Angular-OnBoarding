@@ -11,5 +11,5 @@ import { Steps } from './steps';
 })
 export class Home {
   stepsServ = inject(Steps);
-  steps = this.stepsServ.steps;
+  steps = this.stepsServ.list;
 }
