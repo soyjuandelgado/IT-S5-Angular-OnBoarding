@@ -1,10 +1,10 @@
-<div class="card">
+<div class="card rounded-5 overflow-hidden">
     <img class="card-img-top" src="./{{step().img}}" [style.background-color]="step().bgcolor" >
     <div class="card-body">
         <h3 class="card-title">{{step().title}}</h3>
         <p class="card-text">{{step().description}}</p>
         <footer>
-            <a href="" class="btn bi bi-arrow-left-circle"></a><a href="" class="btn bi bi-arrow-right-circle-fill"></a>
+            <a href="" class="btn bi bi-arrow-left-circle fs-1" id="previous"></a><a href="" class="btn bi bi-arrow-right-circle-fill fs-1" id="next"></a>
         </footer>
     </div>
     
