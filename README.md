@@ -73,6 +73,7 @@ For more information on using the Angular CLI, including detailed command refere
   - [📄Descripción](#descripción)
     - [1. Mostrar texto del primer paso](#1-mostrar-texto-del-primer-paso)
     - [2. Añadir nuevos textos y mostrarlos en diferentes scenes](#2-añadir-nuevos-textos-y-mostrarlos-en-diferentes-scenes)
+    - [3. Maquetación inicial responsive](#3-maquetación-inicial-responsive)
   - [💻Tecnologías Utilizadas](#tecnologías-utilizadas)
   - [📋Requisitos](#requisitos)
   - [🛠️Instalación](#️instalación)
@@ -106,6 +107,15 @@ Se dibujan tarjetas con la información de cada paso y se puede ir hacia delante
 - Recorrer e imprimir el listado de steps en `Home` mediante Scene.
 
 <img src="public/ex2.png" width="500">
+
+### 3. Maquetación inicial responsive
+
+- Crear tarjeta.
+- Cargar imagen y fondo.
+- Añadir botones.
+- Distrubuir espacio de los elementos.
+
+<img src="public/ex3.png" width="200">
 
 ## 💻Tecnologías Utilizadas
 
