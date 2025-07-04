@@ -20,7 +20,6 @@ però notaràs una millora ràpidament.`,
   step = computed(() => this.steps()[this.currentStep()]);
 
   changeStep(num: number){
-    console.log(`Change: ${num}`)
     this.currentStep.update( () => num );
   }
 }
