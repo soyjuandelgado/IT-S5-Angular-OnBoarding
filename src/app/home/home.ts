@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Scene } from './scene/scene';
 import { Steps } from './steps';
 
@@ -11,5 +11,5 @@ import { Steps } from './steps';
 })
 export class Home {
   stepsServ = inject(Steps);
-  steps = this.stepsServ.list;
+  steps = signal(this.stepsServ.list);
 }

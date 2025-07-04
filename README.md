@@ -74,6 +74,7 @@ For more information on using the Angular CLI, including detailed command refere
     - [1. Mostrar texto del primer paso](#1-mostrar-texto-del-primer-paso)
     - [2. Añadir nuevos textos y mostrarlos en diferentes scenes](#2-añadir-nuevos-textos-y-mostrarlos-en-diferentes-scenes)
     - [3. Maquetación inicial responsive](#3-maquetación-inicial-responsive)
+    - [4. Cambio de escena mediante botones](#4-cambio-de-escena-mediante-botones)
   - [💻Tecnologías Utilizadas](#tecnologías-utilizadas)
   - [📋Requisitos](#requisitos)
   - [🛠️Instalación](#️instalación)
@@ -116,6 +117,14 @@ Se dibujan tarjetas con la información de cada paso y se puede ir hacia delante
 - Distrubuir espacio de los elementos.
 
 <img src="public/ex3.png" width="200">
+
+### 4. Cambio de escena mediante botones
+
+- Modificar variables para usar `signal()`
+- Añadir funcion `changeStep()`
+- Cambiar visualizacion de flechas y bolas según el paso actual.
+
+<img src="public/ex4.png" width="200">
 
 ## 💻Tecnologías Utilizadas
 
