@@ -1,13 +1,24 @@
 <div class="card rounded-5 overflow-hidden h-100">
-    <img class="card-img-top h-75" src="./{{step().img}}" [style.background-color]="step().bgcolor">
+    <img class="card-img-top h-75" [src]="step().img" [style.background-color]="step().bgcolor">
     <div class="card-body">
         <h3 class="card-title">{{step().title}}</h3>
         <p class="card-text">{{step().description}}</p>
-        <footer class="d-flex justify-content-between align-items-center">
-            <a href="" class="btn bi bi-arrow-left-circle fs-1"></a>
-            <a href="" class="btn bi bi-circle-fill"></a>
-            <a href="" class="btn bi bi-circle"></a>
-            <a href="" class="btn bi bi-arrow-right-circle-fill fs-1"></a>
-        </footer>
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="col col-2">
+                <a class="col btn bi bi-arrow-left-circle fs-1" [hidden]="currentStep()==0" (click)="changeStep(currentStep() - 1)"></a>
+            </div>
+            <div class="col col-8 d-flex justify-content-around">
+                @for (stepelement of steps(); track $index) {
+                    @if($index == currentStep()){
+                        <a class="btn bi bi-circle-fill"></a>
+                    } @else {
+                        <a class="btn bi bi-circle" (click)="changeStep($index)"></a>
+                    }
+                }
+            </div>
+            <div class="col col-2">
+                <a class="col btn bi bi-arrow-right-circle-fill fs-1" [hidden]="currentStep()==steps().length-1" (click)="changeStep(currentStep() + 1)"></a>
+            </div>
+        </nav>
     </div>
 </div>
