@@ -1,6 +1,8 @@
 import { Component, input, signal, computed } from '@angular/core';
 import { IStep } from '../istep';
 
+import { gsap } from "gsap";
+
 @Component({
   selector: 'app-scene',
   imports: [],
@@ -20,6 +22,13 @@ però notaràs una millora ràpidament.`,
   step = computed(() => this.steps()[this.currentStep()]);
 
   changeStep(num: number){
-    this.currentStep.update( () => num );
+    gsap.to(".card-container", {opacity:0, duration:0.3, onComplete: () => {
+      this.updateCurrent(num );
+      gsap.to(".card-container", {opacity:1, duration:0.3, delay:0.1});
+    }});
+  }
+
+  updateCurrent(num: number){
+      this.currentStep.update( () => num );
   }
 }
