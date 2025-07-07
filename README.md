@@ -1,81 +1,16 @@
 # IT-S5-Angular-OnBoarding
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-
-
-
 ## 🗂️Tabla de contenidos
 
 - [IT-S5-Angular-OnBoarding](#it-s5-angular-onboarding)
-  - [Development server](#development-server)
-  - [Code scaffolding](#code-scaffolding)
-  - [Building](#building)
-  - [Running unit tests](#running-unit-tests)
-  - [Running end-to-end tests](#running-end-to-end-tests)
-  - [Additional Resources](#additional-resources)
   - [🗂️Tabla de contenidos](#️tabla-de-contenidos)
   - [📄Descripción](#descripción)
     - [1. Mostrar texto del primer paso](#1-mostrar-texto-del-primer-paso)
     - [2. Añadir nuevos textos y mostrarlos en diferentes scenes](#2-añadir-nuevos-textos-y-mostrarlos-en-diferentes-scenes)
     - [3. Maquetación inicial responsive](#3-maquetación-inicial-responsive)
     - [4. Cambio de escena mediante botones](#4-cambio-de-escena-mediante-botones)
-    - [4. Cambio de escena haciendo clic en las círculos](#4-cambio-de-escena-haciendo-clic-en-las-círculos)
+    - [5. Cambio de escena haciendo clic en las círculos](#5-cambio-de-escena-haciendo-clic-en-las-círculos)
+    - [6. Animación entre cambio de step](#6-animación-entre-cambio-de-step)
   - [💻Tecnologías Utilizadas](#tecnologías-utilizadas)
   - [📋Requisitos](#requisitos)
   - [🛠️Instalación](#️instalación)
@@ -127,12 +62,18 @@ Se dibujan tarjetas con la información de cada paso y se puede ir hacia delante
 
 <img src="public/ex4.png" width="200">
 
-### 4. Cambio de escena haciendo clic en las círculos
+### 5. Cambio de escena haciendo clic en las círculos
 
 - Modificar distribución
 - Ejecutar `changeStep()` desde los círculos.
 
 <img src="public/ex5.png" width="200">
+
+### 6. Animación entre cambio de step
+
+- Instalacion de [GSAP](https://gsap.com/docs/v3/Installation/?tab=npm&module=esm&require=false)
+- Modificar `changeStep()` añadiendo animación.
+- Añadir `updateCurrent()` para modificar el valor.
 
 ## 💻Tecnologías Utilizadas
 
@@ -140,16 +81,14 @@ Se dibujan tarjetas con la información de cada paso y se puede ir hacia delante
 - SASS
 - Typescript
 - Angular
+- GSAP
 
 ## 📋Requisitos
 
-PENDIENTE COMPLETAR
-
 - Navegador web
+- Node.js
   
 ## 🛠️Instalación
-
-PENDIENTE COMPLETAR
 
 ### 1. Descargar el repositorio
 
@@ -165,6 +104,4 @@ npm install
 
 ## ▶️Ejecución
 
-PENDIENTE
-
-Visitar la web: [Web](https://soyjuandelgado.github.io/IT-S4-Typescript-API/)
+Visitar la web: [Web](https://soyjuandelgado.github.io/IT-S5-Angular-OnBoarding/)
