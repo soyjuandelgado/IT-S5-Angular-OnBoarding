@@ -104,4 +104,4 @@ npm install
 
 ## ▶️Ejecución
 
-Visitar la web: [Web](https://soyjuandelgado.github.io/IT-S5-Angular-OnBoarding/)
+Visitar la web: [Web](https://it-s5-angular-on-boarding.vercel.app/)
